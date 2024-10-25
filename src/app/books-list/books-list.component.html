@@ -1,11 +1,11 @@
 <h2>liste des livres :</h2>
 <button class="btn btn-success mb-3" (click)="changeAction('add')">Ajouter un livre</button>
 @if (action==="add") {
-<app-book-add [lastId]="books[books.length-1].id" (bookCreated)="addBook($event)"></app-book-add>
+<app-book-add [lastId]="books[books.length-1].id" (bookAdded)="addBook($event)"></app-book-add>
 }
 @if (action === "edit" && bookBeingEdited) {
-<app-book-edit [bookToEdit]="bookBeingEdited" (bookUpdated)="updateBook($event)"></app-book-edit>
-}
+  <app-book-edit [bookToEdit]="bookBeingEdited" (bookUpdated)="updateBook($event)"></app-book-edit>
+  }
 <table class="table table-striped table-dark">
     <thead>
         <tr>

@@ -10,6 +10,7 @@ import { BooksListComponent } from './books-list/books-list.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  title = 'books-app';
   logo = "https://upload.wikimedia.org/wikipedia/commons/f/f7/Angular_gradient.png";
   //logo = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROSVsyTE3Rq2DeKnZ9DvrUCTjEv6k0NTDNvw&s"
 }
